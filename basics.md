@@ -10,4 +10,8 @@ To Solve this problem if we are using graphql we can use the dataloaders concept
 
 3. Monorepos need to be used because it creates a single source of truth. In simple terms we can create a repo and branches like development/test etc... This will ensure that all team members are commitingto the same branch and collaboration is easy in terms of remote development
 
-4.
+4.The Liskov principle is the "L" of SOLID design principle. It is as follows: "The program should have the ability to replace the instance of the parent class with an instance of the child class without negative side effects"
+
+5.Race condition normally occurs in a multiple process/multi threaded envoirment. We can use the concept of **LOCKING** to prevent race condition.
+
+6. When a Bug is encountered then first understand which part of the software is giving undesirable results and then analyse that purticular API as to what kind of flow is taking place. The most important thing here is not to meddle with the production db and shift to test db when debugging. We can debug using the testdb in conjuction with console.log so that step by step analysis can be done and appropriate modifications can be done to the code.
